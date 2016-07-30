@@ -48,8 +48,8 @@ namespace ReKatarina.ConfigList
             _SkinManagerStatus = Menu.Add("SkinManagerStatus", new CheckBox("Enable skin changer."));
             _SkinManager = Menu.Add("SkinManager", new Slider("Select your skin.", 1, 0, 9));
             Menu.AddGroupLabel("Humanizer");
-            _Delay = Menu.Add("Delay", new Slider("Select your delay between spells in (ms).", 200, 150, 500));
-            _MaxRandomDelay = Menu.Add("MaxRandomDelay", new Slider("Additional random delay in (ms).", 75, 50, 100));
+            _Delay = Menu.Add("Delay", new Slider("Select your delay between spells in (ms).", 200, 0, 500));
+            _MaxRandomDelay = Menu.Add("MaxRandomDelay", new Slider("Additional random delay in (ms).", 75, 0, 100));
         }
 
         public static void Initialize()
